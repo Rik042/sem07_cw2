@@ -21,3 +21,219 @@
   font-style: normal;
 }
 */
+
+/*--------------------------------------------------------
+BASE
+--------------------------------------------------------*/
+html{
+  box-sizing: border-box;
+  font: 400 64.5% "Merriweather", serif ;
+
+}
+
+*,*::before *::after{
+  box-sizing: inherit;
+}
+
+
+
+/*--------------------------------------------------------
+MISE EN PAGE
+--------------------------------------------------------*/
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a, a p{
+  text-decoration: none;
+  color: black;
+  font: bold 1.8rem Roboto, sans-serif;
+}
+
+li{
+  list-style-type: none;
+}
+
+p{
+  font: 400 1.8rem Roboto, sans-serif ;
+}
+
+/*--------------------------------------------------------
+MODULES
+--------------------------------------------------------*/
+/*Header*/
+header{
+  background-color:#379AE3 ;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+}
+
+header .wrapper{
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  
+  font: bold 2.4rem "Merriweather", serif;
+  text-transform: uppercase;
+}
+
+header ul{
+  display: flex;
+  gap: 40px
+}
+
+header a:hover{
+  color: #E6EDF1;
+}
+
+header p{
+  margin: 0;
+}
+
+header .bouton{
+  padding: 8px 30px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+header .bouton p{
+  font: 700 1.8rem  Roboto, sans-serif;
+}
+
+/*Hero*/
+.hero{
+  height: 640px;
+  background-image: url(../images/Hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 66px 0 auto;
+}
+
+.hero .wrapper{ 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.hero .boite{
+  height: 360px;
+  padding: 40px;
+  max-width: 470px;
+  background-color: rgb(0, 0, 0, 0.7);
+  border-radius: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px
+}
+
+h1{
+  margin:0;
+  font: bold 6.4rem/1.05em "Merriweather", serif;
+  color: #E67522;
+}
+
+.hero p{
+  color: #fff;
+  font: bold 2rem/1.5em Roboto, sans-serif;
+  
+}
+
+.hero .bouton{
+  justify-self: center;
+  width: 350px;
+  background-color: #E67522;
+  border-radius: 5px;
+  
+}
+
+.hero .bouton p{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/*Contenu*/
+
+.contenu{
+  background-color: #E6EDF1;
+  padding-top: 100px;
+  
+}
+
+.contenu .wrapper{
+  display: grid;
+}
+
+.contenu .boite{
+  text-align: center;
+  display: inline-block;
+  width: 800px;
+  justify-self: center;
+  margin-bottom: 70px;
+}
+
+.contenu h2{
+  font: bold 6.4rem/1.15em "Merriweather", serif; 
+  margin-top: 0;
+}
+
+.articles{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+article{
+  background-color: #fff;
+  width: 370px;
+  height: 785px;
+  display: grid;
+  gap: 30px;
+  justify-content: space-evenly;
+  position: relative;
+  padding-bottom: 40px;
+  
+}
+article h3{
+  font: bold 3.6rem/1.08em "Merriweather", serif;
+  text-align: center;
+  
+}
+
+article p{
+  padding: 0 20px;
+  text-align: center;
+}
+
+article .bouton{
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.premier{
+  position:absolute;
+  top: -10px;
+  right: -10px;
+}
+
+/*Modale*/
+.modale{
+  display: none;
+}

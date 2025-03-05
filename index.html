@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vélo 4 saisons</title>
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Merriweather:opsz,wght@18..144,700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Merriweather:opsz,wght@18..144,700&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -16,43 +16,45 @@
 
 </head>
 <body>
-<!-----------------------------------Nav------------------------------------------->
-    <nav>
+<!-----------------------------------Header------------------------------------------->
+    <header>
         <div class="wrapper">
 
-            <p class="logo">Vélo 4 saisons</p>
+          <a href="#"><p class="logo">Vélo 4 saisons</p></a>
 
-             <ul>
-                <li>
-                    <a href="">
-                        Laurentides
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-                        Laurentides
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-                        Estrie
-                    </a>
-                </li>
-
-                <li>
-                    <a href="">
-                        Lanaudière
-                    </a>
-                </li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Laurentides
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Laurentides
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Estrie
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#">
+                            Lanaudière
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
             <div class="bouton">
                 <p>Billets</p>
             </div>
         </div>
-    </nav>
+    </header>
 
 <!------------------------------------Hero------------------------------------------>
     <section class="hero">
@@ -62,7 +64,7 @@
     
                 <p>Vous attendrez chaque week-end avec impatience pour explorer nos différents sentiers Fat-BIKE!</p>
     
-                <div class="bouton">Télécharge le PDF de nos circuits</div>
+                <div class="bouton"><p>Télécharge le PDF de nos circuits</p></div>
             </div>
         </div>
     </section>
@@ -70,18 +72,22 @@
 <!------------------------------------Contenu------------------------------------------>
     <section class="contenu">
         <div class="wrapper">
-            <h2>Nos circuits Fat-bike</h2>
+           <div class="boite">
+                <h2>Nos circuits Fat-bike</h2>
 
-            <p>Conçus pour tous les goûts et pour vous faire vivre des expériences différentes, nos choix de circuits sont adaptés à vos goûts et équipements. Goût du risque ? Ou au contraire, goût de faire une balade en forêt ? Un circuit existe pour vos!</p>
+                <p>Conçus pour tous les goûts et pour vous faire vivre des expériences différentes, nos choix de circuits sont adaptés à vos goûts et équipements. Goût du risque ? Ou au contraire, goût de faire une balade en forêt ? Un circuit existe pour vos!</p>
+           </div>
 
             <div class="articles">
                 <article>
-                    <img src="images/Cross-country.jpg" alt="Cross-country">
-                    
-                    <h3>Cross-country</h3>
+                   <div class="contenu_article">
+                        <img src="images/Cross-country.jpg" alt="Cross-country">
+                        
+                        <h3>Cross-country</h3>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis orci auctor, mattis velit vel.</p>
-                    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis orci auctor, mattis velit vel.</p>
+                        
+                   </div>
                     <div class="bouton">
                         <a href="#">
                             <p>
@@ -92,14 +98,17 @@
                 </article>
 
                 <article>
-                    <img src="images/Descente.jpg" alt="Descente">
-                    
-                    <h3>Descente</h3>
+                   <div class="contenu_article">
+                        <img src="images/Descente.jpg" alt="Descente">
+                        
+                        <h3>Descente</h3>
 
-                    <p>Vestibulum sodales nisl quis nulla mattis tempor. Nulla nec lacus consequat, accumsan est quis, tempor justo. In ut suscipit magna.</p>
-                    
-                    <p>Donec pharetra risus sit amet erat molestie ultricies. Non tellus eget.</p>
+                        <p>Vestibulum sodales nisl quis nulla mattis tempor. Nulla nec lacus consequat, accumsan est quis, tempor justo. In ut suscipit magna.</p>
+                        
+                        <p>Donec pharetra risus sit amet erat molestie ultricies. Non tellus eget.</p>
 
+                   </div>
+                   
                     <div class="bouton">
                         <a href="#">
                             <p>
@@ -110,14 +119,16 @@
                 </article>
 
                 <article>
-                    <img src="images/Acrobatique.jpg" alt="Acrobatique">
+                    <div class="contenu_article">
+                        <img src="images/Acrobatique.jpg" alt="Acrobatique">
 
-                    <img src="images/premier.png" alt="">
-                    
-                    <h3>Acrobatique</h3>
-
-                    <p> In ut suscipit magna. Donec pharetra risus sit amet erat molestie ultricies. Suspendisse pellentesque magna vel gravida lobortis.</p>
-                    
+                        <img class="premier" src="images/premier.png" alt="premier">
+                        
+                        <h3>Acrobatique</h3>
+    
+                        <p> In ut suscipit magna. Donec pharetra risus sit amet erat molestie ultricies. Suspendisse pellentesque magna vel gravida lobortis.</p>
+                        
+                    </div>
                     <div class="bouton">
                         <a href="#">
                             <p>
@@ -125,6 +136,7 @@
                             </p>
                         </a>
                     </div>
+                   
                 </article>
 
             </div>
@@ -139,19 +151,27 @@
 
     <footer>
         <div class="wrapper">
-            <div class="media_sociaux">
-                <span class="material-symbols-outlined">
-                    directions_bike
-                </span>
+            <nav class="media">
 
-                <span class="material-symbols-outlined">
-                    ac_unit
-                </span>
+                <li>
+                    <span class="material-symbols-outlined">
+                        directions_bike
+                    </span>
+                </li>
+               
+                <li>
+                    <span class="material-symbols-outlined">
+                        ac_unit
+                    </span>
+                </li>
 
-                <span class="material-symbols-outlined">
-                    group
-                </span>
-            </div>   
+                <li>
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>   
+                </li>
+                
+            </nav>   
             
             <p>Marie-France Turcotte© 2022 — Vélo 4 saisons</p>
         </div>
@@ -159,5 +179,11 @@
 
 
 <!-------------------------------------Modale----------------------------------------->
+    <div class="modale">
+        <div class="wrapper">
+            <p>Modale</p>
+        </div>
+    </div>
+
 </body>
 </html>
